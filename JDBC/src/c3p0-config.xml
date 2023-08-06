@@ -1,0 +1,26 @@
+<c3p0-config>
+    <!-- 使用默认的配置读取连接池对象 -->
+    <default-config>
+        <!--  连接参数 -->
+        <!--需要修改自己数据库路径、用户账号、密码-->
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/mayiktmeite?serverTimezone=UTC</property>
+        <property name="user">root</property>
+        <property name="password">zlt144367100</property>
+        <!--初始化申请的连接数量-->
+        <property name="initialPoolSize">5</property>
+        <!--最大的连接数量-->
+        <property name="maxPoolSize">10</property>
+        <!--超时时间(单位毫秒)-->
+        <property name="checkoutTimeout">3000</property>
+    </default-config>
+    <named-config name="mayikt-otherc3p0">
+        <!--  连接参数 -->
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/mayikt?serverTimezone=UTC</property>
+        <property name="user">root</property>
+        <property name="password">root</property>
+    </named-config>
+
+
+</c3p0-config>
